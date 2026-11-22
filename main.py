@@ -30,5 +30,6 @@ CREATE TABLE IF NOT EXISTS students_courses(
 )
 """)
 
+
 conn.commit()
 conn.close()
