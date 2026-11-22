@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS courses(
 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS students_courses(
-    student_id INTGER,
+    student_id INTEGER,
     course_id INTEGER,
     FOREIGN KEY(course_id) REFERENCES students(id) ON DELETE CASCADE
     FOREIGN KEY(course_id) REFERENCES courses (courses_id) ON DELETE CASCADE
